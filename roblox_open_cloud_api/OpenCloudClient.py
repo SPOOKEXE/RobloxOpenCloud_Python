@@ -4,8 +4,8 @@ import json
 
 from warnings import warn
 
-from roblox_open_cloud.Enums import Enum, BaseEnum
-from roblox_open_cloud.Requests import RequestsClass
+from roblox_open_cloud_api.Enums import Enum, BaseEnum
+from roblox_open_cloud_api.Requests import RequestsClass
 
 # Constants
 MESSAGING_SERVICE_BASE_URL = "https://apis.roblox.com/messaging-service/v1/universes/{}/topics/{}"

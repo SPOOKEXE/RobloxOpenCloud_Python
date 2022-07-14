@@ -49,3 +49,5 @@ else:
 ```
 
 Simple to use ;-)
+
+PyPI Page : https://pypi.org/project/roblox-open-cloud-api/0.0.1/

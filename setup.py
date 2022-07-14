@@ -13,10 +13,10 @@ LONG_DESCRIPTION = 'This package allows easy access to utilise your API keys wit
 
 # Setting up
 setup(
-	name="roblox_open_cloud",
+	name="roblox_open_cloud_api",
 	version=VERSION,
 	author="SPOOK_EXE (Declan H)",
-	author_email="<unavailable>",
+	author_email="declagaming@gmail.com",
 	description=DESCRIPTION,
 	long_description_content_type="text/markdown",
 	long_description=long_description,
@@ -25,7 +25,7 @@ setup(
 	license="MIT",
 	keywords=['python', 'roblox', 'open-cloud', 'roblox open-cloud', 'datastore', 'publish', 'messaging-service'],
 	classifiers=[
-		"Development Status :: 2 - Public Testing",
+		"Development Status :: 1 - Planning",
 		"Intended Audience :: Developers",
 		"Programming Language :: Python :: 3",
 		#"Operating System :: Unix",
