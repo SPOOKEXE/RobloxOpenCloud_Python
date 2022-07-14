@@ -5,27 +5,25 @@ Contains a module which allows you to utilise open cloud on Roblox.
 Start with the following;
 
 ```py
-from roblox_open_cloud import OpenCloudClient, ResultEnum
+from roblox_open_cloud import Client as OpenCloudAPI, BaseEnum, Enum
 
 # Key is necessary
-OpenCloudAPI = OpenCloudClient(key="YOUR_API_KEY", cookies=None, headers=None)
+OpenCloudAPI = OpenCloudClient(api_key="YOUR_API_KEY", cookies=None, headers=None)
 
-# set this cookie, optionally for a domain
+# set the cookie for any request, optional info
 OpenCloudAPI.setCookie("cookie_name", "cookie_value", "domain" or None)
 
-# set the headers in any request
+# set the headers in any request, optional info
 OpenCloudAPI.setHeader("header_name", "header_value")
 
-# force this user agent string
-OpenCloudAPI.forceUserAgent("user_agent_string")
-
-# Universe ID, specific game id (-1 for none), data = json string
-resultEnum = OpenCloudAPI.PostOnMessagingService(universe_id=0, game_id=-1, json_data=None)
-if resultEnum == ResultEnum.Success:
+# universe_id = integer, topic = string, data = string
+resultEnum = OpenCloudAPI.PostOnMessagingService(universe_id=0, topic=None, data=None)
+if resultEnum == Enum.Success:
 	print("Success")
 else:
-	print("Unsuccessful - Reason; ", ResultEnum.Name)
+	print("Unsuccessful - Reason; ", resultEnum)
 
+[UNAVAILABLE ITEMS - FUTURE REFERENCE]
 # DATASTORE API
 # OpenCloudAPI.GetAllDataInDataStore(universe_id=0)
 # OpenCloudAPI.GetDataFromKeyInDataStore(universe_id=0, key="key_to_search")
