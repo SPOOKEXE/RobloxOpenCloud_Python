@@ -2,8 +2,16 @@
 ## Coded in python
 
 Contains a module which allows you to utilise open cloud on Roblox.
-Start with the following;
 
+Install this module using pip!
+Choose whichever fits your environment.
+```batch
+python3 pip install roblox_open_cloud
+
+pip install roblox_open_cloud
+```
+
+Start with the following;
 ```py
 from roblox_open_cloud import Client as OpenCloudAPI, BaseEnum, Enum
 

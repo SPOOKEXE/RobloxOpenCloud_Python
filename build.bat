@@ -1,3 +1,2 @@
-python3 setup.py sdist bdist_wheel
+py setup.py sdist bdist_wheel
 pause
-

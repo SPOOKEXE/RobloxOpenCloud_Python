@@ -1,5 +1,5 @@
 
-from typing import Tuple, Union
+from typing import Union
 
 # Enums
 ListOrNoneUnion = Union[list, None]

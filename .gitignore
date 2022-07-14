@@ -39,4 +39,9 @@ luac.out
 *.x86_64
 *.hex
 
+# Files
+/build
+/dist
+/.vscode
 tester.py
+*.egg-info
