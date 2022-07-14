@@ -56,6 +56,10 @@ class Client:
 			warn(response_enum, response.content)
 		return response_enum
 
+	# def GetDataStoreKeyData(universeId : int, datastoreName : str, datastoreKey : str):
+	# 		# https://apis.roblox.com/datastores/v1/universes/{universeId}/standard-datastores/datastore/entries/entry?datastoreName={datastoreName}&entryKey={datastoreKey}
+	# 		raise NotImplemented("Has not been implemented - GetDataStoreKeyData")
+
 	# Init
 	def __init__(self, api_key=None, cookies=None, headers=None):
 		self.__requestsInstance = RequestsClass(api_key=api_key, cookies=cookies, headers=headers)

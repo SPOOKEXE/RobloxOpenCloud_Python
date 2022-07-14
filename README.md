@@ -6,7 +6,7 @@ Contains a module which allows you to utilise open cloud on Roblox.
 Install this module using pip!
 Choose whichever fits your environment.
 ```batch
-python3 pip install roblox_open_cloud
+python3 -m pip install roblox_open_cloud
 
 pip install roblox_open_cloud
 ```
