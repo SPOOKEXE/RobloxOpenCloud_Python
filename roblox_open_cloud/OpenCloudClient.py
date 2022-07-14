@@ -29,8 +29,10 @@ class Client:
 	# Primary Functions
 	def PostOnMessagingService(self, universe_id=0, topic=None, data=None) -> BaseEnum:
 		print(universe_id, topic, data)
+		if type(universe_id) != int:
+			return BaseEnum(12, "ArgumentError", "Invalid Argument", custom_error="Universe Id is invalid.")
 		if type(data) != str:
-			raise ValueError("Passed Data is not a string")
+			return BaseEnum(13, "ArgumentError", "Invalid Argument", custom_error="Data is invalid.")
 		# get a JSON string of the data
 		content = json.dumps({"message" : data})
 		# endcode it

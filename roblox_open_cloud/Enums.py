@@ -1,5 +1,5 @@
 
-from typing import Union
+from typing import Tuple, Union
 
 # Enums
 ListOrNoneUnion = Union[list, None]
@@ -11,13 +11,16 @@ class BaseEnum:
 	custom_error_str = None
 	description = None
 	def __str__(self):
-		return self.name + " " + str(self.value) + " " + self.description
+		end_str = self.custom_error_str == None and self.custom_error_str or self.description
+		return self.name + " " + str(self.value) + " " + end_str
 	def __repr__(self):
-		return self.name + " " + str(self.value) + " " + self.description
-	def __init__(self, value : any, name : str, description : str):
+		end_str = self.custom_error_str == None and self.custom_error_str or self.description
+		return self.name + " " + str(self.value) + " " + end_str
+	def __init__(self, value : any, name : str, description : str, custom_error : Union[str, None] = None):
 		self.value = value
 		self.name = name
 		self.description = description
+		self.custom_error_str = custom_error
 
 # Enums
 EnumItemOrNone = Union[BaseEnum, None]
@@ -92,5 +95,7 @@ class Enum:
 	InternalError = BaseEnum(5, "InternalError", "An internal error occured @ Roblox Server")
 	# program error
 	ProgramError = BaseEnum(6, "ProgramError", "An internal error in the python code has occured")
+	# invalid argument
+	InvalidArgument = BaseEnum(7, "ArgumentError", "An incorrect argument has been passed.")
 
 Enum = Enum()
