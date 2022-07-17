@@ -37,13 +37,13 @@ class RequestsClass:
 		self._REQUESTS_SESSION.headers['x-api-key'] = self._API_KEY
 
 	# methods
-	def get(self, url : str) -> Response:
+	def get(self, url : str, params=None) -> Response:
 		self.updateSessionInfo()
-		return self._REQUESTS_SESSION.get(url)
+		return self._REQUESTS_SESSION.get(url, params=params)
 
-	def post(self, url : str, data : any) -> Response:
+	def post(self, url : str, data : any, params=None) -> Response:
 		self.updateSessionInfo()
-		return self._REQUESTS_SESSION.post(url, data)
+		return self._REQUESTS_SESSION.post(url, data, params=params)
 
 	def delete(self, url : str) -> Response:
 		self.updateSessionInfo()

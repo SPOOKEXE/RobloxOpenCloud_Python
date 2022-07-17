@@ -1,0 +1,9 @@
+
+
+https://devforum.roblox.com/t/data-store-access-through-open-cloud/1646277
+
+https://devforum.roblox.com/t/open-cloud-data-store-api-reference/1736533
+
+https://developer.roblox.com/en-us/articles/place-management-api-reference
+
+https://devforum.roblox.com/t/announcing-datastore-apis-for-open-cloud/1736583
